@@ -1,0 +1,47 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.3.6",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "@stripe/stripe-js": "^3.3.0",
+    "antd": "^5.16.1",
+    "bootstrap": "^5.3.3",
+    "date-fns": "^3.6.0",
+    "mdb-react-ui-kit": "^7.2.0",
+    "moment": "^2.30.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-datepicker": "^7.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.0.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^6.22.3",
+    "react-scroll-to-top": "^3.0.0",
+    "react-toastify": "^10.0.5",
+    "typewriter-effect": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  }
+}

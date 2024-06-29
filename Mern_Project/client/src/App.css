@@ -1,0 +1,315 @@
+:root {
+  --bg-color: rgb(255, 226, 243);
+  --main-color: rgb(193, 114, 160);
+  --hover-color: rgb(218, 148, 189);
+  --img-hover: rgb(238, 184, 217);
+}
+
+/* title */
+#title:hover {
+  color: var(--bg-color);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: var(--bg-color);
+  color: black;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  /* background-color: rgb(250, 189, 225); */
+  padding: 15px;
+  border-radius: 50px;
+}
+.layout .forms {
+  width: 50vw;
+}
+
+.linkHover:hover {
+  color: black;
+}
+
+/* edit */
+#edit {
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+  position: "absolute";
+  margin-top: 16px;
+  margin-bottom: 20px;
+  left: "80px";
+  color: white;
+}
+
+#edit:hover {
+  color: var(--main-color);
+  transform: scale(2, 2);
+}
+
+/* update profile */
+.bg-color {
+  background-color: var(--main-color);
+}
+.bg-color:hover {
+  background-color: rgb(224, 167, 200);
+}
+
+.text-color {
+  color: var(--main-color);
+}
+
+/* photolink */
+.photolink {
+  display: flex;
+  justify-content: space-between;
+}
+.photolink input {
+  width: 70%;
+}
+.photolink button {
+  width: 20%;
+}
+
+/* perks */
+.perks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100vw; */
+}
+.perks div {
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 6px;
+}
+.perks input[type="checkbox"] {
+  margin-top: 13px;
+  cursor: pointer;
+}
+.perks span {
+  cursor: pointer;
+}
+
+.btn-color {
+  background-color: rgb(193, 114, 160);
+}
+
+.btn-color:hover {
+  background-color: var(--hover-color);
+}
+
+.location:hover {
+  color: var(--hover-color);
+}
+
+/* bookedPlaceImage */
+#bookedPlaceImage {
+  height: 100%;
+  width: 400px;
+}
+
+#PlaceImage {
+  height: 100%;
+  width: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  .layout .forms {
+    width: 80vw;
+  }
+
+  /* photolink */
+  .photolink {
+    display: flex;
+    flex-direction: column;
+  }
+  .photolink input {
+    width: 100%;
+  }
+  .photolink button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #bookedPlaceImage {
+    width: 100%;
+  }
+}
+
+/* images */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.images img {
+  width: 130px;
+  height: 130px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* placeData */
+.placeData {
+  display: flex;
+  gap: 40px;
+  border: 1px solid var(--main-color);
+  padding: 30px;
+  /* border-radius: 20px; */
+}
+
+.placeData img {
+  width: 150px;
+}
+.placeData img:hover {
+  border: 30px solid var(--main-color);
+  background-color: var(--main-color);
+  transition: all 0.7s ease-in-out;
+}
+
+.allPlaces {
+  border: 1px double var(--main-color);
+  border-top: none;
+}
+
+.singleImg {
+  height: 400px;
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.showAllPhotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--img-hover);
+}
+
+.container img:hover {
+  border: 20px solid var(--img-hover);
+  transition: all 0.8s ease-in-out 0.3s;
+}
+
+.showAllPhotos img {
+  width: 50vw;
+}
+
+/* .info */
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+
+.info div {
+  flex-basis: 50vw;
+}
+
+.info .bookform {
+  background-color: var(--main-color);
+}
+
+/* gridView */
+.gridView {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid var(--main-color);
+}
+
+.gridView div {
+  /* width: 500px; */
+  margin-top: 10px;
+}
+.gridView img {
+  height: 200px;
+  width: 200px;
+}
+
+/* delete */
+.delete {
+  color: red;
+}
+.delete:hover {
+  color: rgb(252, 172, 172);
+}
+
+/* updateform */
+.updateform {
+  width: 50vw;
+}
+@media screen and (max-width: 900) {
+  .gridView {
+    flex-direction: column;
+  }
+
+  .gridView div {
+    width: 200px;
+  }
+
+  .isGrid {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .placeData {
+    flex-direction: column;
+  }
+
+  .placeData div p {
+    word-wrap: break-word;
+  }
+  .placeData img {
+    width: 100%;
+  }
+
+  .showAllPhotos img {
+    width: 90vw;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+  .info div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .perks {
+    flex-direction: column;
+  }
+  .perks div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 750px) {
+  .perks {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .perks div {
+    /* width: 40%; */
+    height: 60px;
+    text-align: center;
+  }
+}
